@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '1.00';
+$VERSION = '1.01';
 
 =head1 NAME
 
@@ -52,12 +52,12 @@ $SECTIONID  = 5;
 sub List {
     $cgiparams{sectionid} = $SECTIONID;
     shift->SUPER::List;
-    $tvars{profiles} = $tvars{data};
+    $tvars{profiles} = $tvars{mainarts};
 }
 
 sub Item {
     shift->SUPER::Item;
-    $tvars{who} = $tvars{$tvars{primary}};
+    $tvars{who} = $tvars{articles}->{$tvars{primary}};
 }
 
 # -------------------------------------
@@ -70,7 +70,7 @@ sub Admin {
 
 sub Edit {
     shift->SUPER::Edit;
-    $tvars{who} = $tvars{$tvars{primary}};
+    $tvars{who} = $tvars{articles}->{$tvars{primary}};
 }
 
 1;
@@ -162,7 +162,7 @@ Miss Barbell Productions, L<http://www.missbarbell.co.uk/>
   Copyright (C) 2002-2014 Barbie for Miss Barbell Productions
   All Rights Reserved.
 
-  This module is free software; you can redistribute it and/or
-  modify it under the same terms as Perl itself.
+  This distribution is free software; you can redistribute it and/or
+  modify it under the Artistic Licence v2.
 
 =cut

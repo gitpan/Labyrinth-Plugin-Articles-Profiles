@@ -8,7 +8,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     AUTHOR              => 'Barbie <barbie@cpan.org>',
-    NAME                => 'Labyrinth-Plugin-Articles-Profiles',
+    NAME                => 'Labyrinth::Plugin::Articles::Profiles',
     VERSION_FROM        => 'lib/Labyrinth/Plugin/Articles/Profiles.pm',
     ABSTRACT            => 'Profiles plugin for the Labyrinth framework',
     NO_META             => 1,
