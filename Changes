@@ -1,6 +1,11 @@
 Changes for the Labyrinth-Plugin-Articles-Profiles
 ==================================================
 
+1.02    2014-11-24
+        - fixed license fields in META.json to be lists.
+        - upgraded Labyrinth prerequisites.
+        - Labyrinth::Test::Harness now a prerequisite.
+
 1.01    2014-11-10
         - fixed internal template variable links.
         - extended functional test suite.
